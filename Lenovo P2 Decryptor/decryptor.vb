@@ -77,14 +77,17 @@
         End If
 
         If states = "2" Then
-            Dim flashtwrp As New Process
-            flashtwrp.StartInfo.FileName = "fastboot.exe"
-            flashtwrp.StartInfo.Arguments = "flash userdata userdata.img"
-            flashtwrp.StartInfo.UseShellExecute = False
-            flashtwrp.StartInfo.CreateNoWindow = True
-            flashtwrp.Start()
-            flashtwrp.WaitForExit()
-
+            Dim decrypt As New Process
+            decrypt.StartInfo.FileName = "fastboot.exe"
+            decrypt.StartInfo.Arguments = "flash userdata userdata.img"
+            decrypt.StartInfo.UseShellExecute = False
+            decrypt.StartInfo.CreateNoWindow = True
+            decrypt.Start()
+            decrypt.WaitForExit()
+            decrypt.StartInfo.Arguments = "reboot"
+            decrypt.Start()
+            decrypt.WaitForExit()
+            MsgBox("Device Decrypted Successfully")
         End If
     End Sub
 

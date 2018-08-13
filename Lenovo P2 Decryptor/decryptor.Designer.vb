@@ -113,7 +113,7 @@ Partial Class decryptor
         Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Font = New System.Drawing.Font("Segoe UI", 18.0!, System.Drawing.FontStyle.Bold)
         Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(78, 9)
+        Me.Label1.Location = New System.Drawing.Point(69, 9)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(257, 32)
         Me.Label1.TabIndex = 6
@@ -125,7 +125,7 @@ Partial Class decryptor
         Me.Label2.BackColor = System.Drawing.Color.Transparent
         Me.Label2.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
         Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(296, 41)
+        Me.Label2.Location = New System.Drawing.Point(287, 41)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(56, 15)
         Me.Label2.TabIndex = 7
@@ -147,6 +147,7 @@ Partial Class decryptor
         Me.Controls.Add(Me.Button1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "decryptor"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Lenovo P2 Decryptor"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
