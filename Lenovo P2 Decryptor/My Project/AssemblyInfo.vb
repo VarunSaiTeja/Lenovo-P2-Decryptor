@@ -9,8 +9,8 @@ Imports System.Runtime.InteropServices
 ' Review the values of the assembly attributes
 
 <Assembly: AssemblyTitle("Lenovo P2 Decryptor")>
-<Assembly: AssemblyDescription("")>
-<Assembly: AssemblyCompany("")>
+<Assembly: AssemblyDescription("To decrypt encrypted internal storage")>
+<Assembly: AssemblyCompany("Varun")>
 <Assembly: AssemblyProduct("Lenovo P2 Decryptor")>
 <Assembly: AssemblyCopyright("Copyright ©  2018")>
 <Assembly: AssemblyTrademark("")>
